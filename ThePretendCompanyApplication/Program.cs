@@ -49,6 +49,14 @@ namespace ThePretendCompanyApplication // Note: actual namespace depends on the 
                 Console.WriteLine($" ");
             }
 
+            var averageAnnualSalary = resultList.Average(a => a.AnnualSalary);
+            var highestAnnualSalary = resultList.Max(a => a.AnnualSalary);
+            var lowestAnnualSalary = resultList.Min(a => a.AnnualSalary);
+
+            Console.WriteLine($"Average Annual Salary: {averageAnnualSalary}");
+            Console.WriteLine($"Highest Annual Salary: {highestAnnualSalary}");
+            Console.WriteLine($"Lowest Annual Salary: {lowestAnnualSalary}");
+
             Console.ReadKey();
         }
     }
